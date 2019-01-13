@@ -1,0 +1,398 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+/* --################################# NAV ######################################--*/
+.fixed-top {
+
+}
+.nav__socialMedia {
+    height: 10px;
+    background-color: black;
+}
+#hamburger__button {
+    border: none;
+}
+.bar1, .bar2, .bar3 {
+    width: 40px;
+    height: 4px;
+    background-color: #ffc20e;
+    display: block;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border-radius: 3px;
+    transition: .2s ease;
+}
+.logo {
+        font-size: 3.25rem;
+    background-image: url(../img/logo-3.svg);
+    width: 206px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+nav a {
+    color: #fed046;
+}
+#navbarNav{
+    position: relative;
+    padding-left: 31px;
+}
+.navbar-toggler {
+    margin-right: 7%;
+}
+.navbar-expand-lg .navbar-nav {
+    text-align: center;
+    margin-left: auto;
+}
+.nav-item {
+    transition: 0.2s ease;
+}
+.nav-item::after {
+    content: '';
+    border-bottom: 2px solid #fed046;
+    width: 0;
+    display: block;
+    margin: auto;
+    transition: 0.2s;
+}
+.nav-item:hover::after {
+    content: '';
+    width: 30px;
+    display: block;
+    margin: auto;
+}
+
+.nav-item-white {
+    font-weight: 900;
+    border-top: 2px solid #ffffffdb;
+    transition: 0.2s ease;
+}
+.navbar-white {
+    background-color: #fff;
+    transition: 0.4s;
+    background-color: #ffffff5e;
+    height: 100px;
+}
+#nav.black {
+    background: black;
+    height: 66px;
+}
+.navbar-shadow {
+    box-shadow: 0px 5px 15px #888787;
+    background-color: #fff;
+    padding: 0;
+}
+.nav-link:hover {
+    color: gold;
+}
+
+/* --################################# HEADER ######################################--*/
+h1 {
+    color: white;
+    margin-top: 40vh;
+    font-size: 3rem;
+}
+#header h2 {
+    color: white;
+    font-weight: 100;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+#header {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #00000085, #00000000), url(../img/header.jpg);
+    background-size: cover;
+}
+.image {
+    width: 100%;
+    height: 100vh;
+}
+.image1 {
+    background-image: url(../img/banner2.jpg)
+}
+.image2 {
+    background-image: url(../img/banner3.jpg)
+}
+.image3 {
+    background-image: url(../img/banner4.jpg)
+}
+
+.blue h3 {
+    background: #fff;
+    color: #3498db;
+    font-size: 36px;
+    line-height: 100px;
+    margin: 10px;
+    padding: 2%;
+    position: relative;
+    text-align: center;
+}
+
+.headerButton {
+    padding: 10px 50px;
+    background-color: gold;
+    border: 1px solid;
+    border-radius: 23px;
+    border: 1px solid gold;
+    margin-top: 20px;
+    transition: 0.2s;
+}
+button {
+    transition: 0.2s;
+    font-weight: 600;
+}
+button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* --################################# SERVICE ######################################--*/
+
+.service__titles {
+    padding: 50px 0;
+    text-align: center;
+}
+.service__image {
+    background-image: linear-gradient(#021829bf, #0218298a), url(../img/box.jpg);
+    background-size: cover;
+    min-height: 400px;
+    color: white;
+    padding: 45px;
+    transition: .2s;
+}
+.service__box {
+    padding: 4px;
+    transition: .2s;
+}
+.service__box:hover .service__image {
+    background-image: linear-gradient(#02182900, #0218298a), url(../img/box.jpg);
+
+}
+.serviceImageShadow {
+    height: 50%;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(rgba(2, 24, 41, 0.69), rgba(2, 24, 41, 0.79));
+    padding: 10px 10px;
+}
+.icon {
+    color: white;
+    font-size: 7em;
+}
+
+#service .icon-bitcoin {
+    color: #faea96;
+}
+.icon-wallet::before {
+    content: '\e800';
+    margin: 0!important;
+}
+.bitcoin__image {
+    background-image: url(../img/bitcoin.png);
+    height: 400px;
+    margin: 50px 0;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+.bitcoin__desc {
+    margin-bottom: 2rem!important;
+    margin: 50px 0;
+}
+.imageButton {
+    border-radius: 23px;
+    border: 1px solid;
+    font-weight: bold;
+    padding: 10px 50px;
+    background-color: white;
+}
+/* --################################# ABOUT ######################################--*/
+
+#about {
+    background-color: #f1f0f0;
+    padding: 50px 0;
+}
+.about__titles {
+    text-align: center;
+}
+.about__desc {
+    height: 400px;
+    padding: 30px 0;
+}
+.about__image {
+    background-image: url(../img/bitcoin-laptop.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.aboutButton {
+    padding: 10px 50px;
+    background-color: gold;
+    border: 1px solid;
+    border-radius: 23px;
+    border: 1px solid gold;
+}
+/* --################################# PAGES ######################################--*/
+#pages {
+    padding: 50px 0;
+}
+.pages__titles {
+    text-align: center;
+    padding: 50px 0;
+}
+.pages__icon {
+    height: 300px;
+    text-align: center;
+    padding: 10px 46px;
+}
+#pages i {
+    font-size: 5rem;
+    transition: .2s;
+}
+#pages i:hover {
+    color: gold;
+}
+.pages__image {
+    background-image: url(../img/smartfon.png);
+    background-position: center;
+    background-size: 35%;
+    background-repeat: no-repeat;
+}
+.pages__desc {
+    text-align: left;
+}
+/* --################################# PORTFOLIO ######################################--*/
+#portfolio {
+    background-color: #f1f0f0;
+    padding: 50px 0;
+}
+.portfolio__title {
+    text-align: center;
+    padding: 50px 0;
+}
+.portfolio__image {
+    min-height: 300px;
+    background-size: cover;
+    transition: .8s;
+}
+.image1 {
+    background-image: url(../img/startup.jpg);
+}
+.image2 {
+    background-image: url(../img/workplace.jpg);
+}
+.image3 {
+    background-image: url(../img/secretary.jpg);
+}
+
+#portfolio span {
+    font-weight: bold;
+    display: block;
+}
+.item-mask {
+    overflow: hidden;
+}
+.item-mask:hover .portfolio__image {
+    transform: scale(1.5) rotate(-5deg);
+}
+/* --################################# ELEMENTS ######################################--*/
+#elements {
+ text-align: center;
+    padding: 30px 0;
+}
+#elements p:nth-child(3) {
+    font-weight: bold;
+}
+.elements__icons {
+    background-color: black;
+    padding: 4px 0;
+    width: 180px;
+    border-radius: 5px;
+}
+#elements i {
+    color: white;
+    font-size: 37px;
+    position: absolute;
+    left: 18px;
+    top: 0px;
+}
+.icon-2 {
+    color: #7ac735!important;
+}
+#elements figure {
+
+}
+#elements figure p {
+    display: inline;
+    color: white;
+    margin-left: 15px;
+    font-size: 12px;
+}
+#elements figure span {
+    font-size: 25px;
+    margin-left: 35px;
+    line-height: 10px;
+}
+/* --################################# FOOTER ######################################--*/
+#footer {
+    background: #181a29;
+    color: #808080;
+}
+#footer h3 {
+    color: gold;
+    font-size: 2.6em;
+}
+.footer__desc {
+    text-align: center;
+    margin-top: 13px;
+}
+#footer i {
+    color: white;
+    margin-right: 6px;
+}
+#footer ul li {
+    display: block;
+    margin-bottom: 7px;
+}
+#footer ul li:first-child {
+    margin-bottom: 15px;
+    color: white;
+}
+#footer ul li:nth-child(4) {
+    color: white;
+    font-weight: bold;
+}
+.footer__list1 li:first-child {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: white;
+}
+#footer input {
+    background: #ffffff00;
+    border: 1px solid #808080;
+    padding: 5px;
+}
+.footer__large {
+    padding: 50px 0;
+}
+.footer__mini {
+    border-top: 1px solid #808080;
+    width: 100vw!important;
+    padding: 20px 0;
+}
+.footer__icons {
+    margin-top: 20px;
+}
+.footer__icons i {
+    border-radius: 22px;
+    border: 1px solid;
+    font-size: 20px;
+    padding: 7px;
+    color: white;
+}

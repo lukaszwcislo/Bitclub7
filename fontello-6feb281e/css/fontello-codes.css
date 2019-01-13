@@ -1,0 +1,17 @@
+
+.icon-wallet:before { content: '\e800'; } /* '' */
+.icon-money:before { content: '\e801'; } /* '' */
+.icon-googleplay:before { content: '\e802'; } /* '' */
+.icon-phone:before { content: '\e803'; } /* '' */
+.icon-mail:before { content: '\e804'; } /* '' */
+.icon-cog-alt:before { content: '\e805'; } /* '' */
+.icon-laptop:before { content: '\e806'; } /* '' */
+.icon-globe-alt:before { content: '\e807'; } /* '' */
+.icon-credit-card:before { content: '\e808'; } /* '' */
+.icon-twitter:before { content: '\f099'; } /* '' */
+.icon-facebook:before { content: '\f09a'; } /* '' */
+.icon-dollar:before { content: '\f155'; } /* '' */
+.icon-bitcoin:before { content: '\f15a'; } /* '' */
+.icon-instagram:before { content: '\f16d'; } /* '' */
+.icon-apple:before { content: '\f179'; } /* '' */
+.icon-android:before { content: '\f17b'; } /* '' */
