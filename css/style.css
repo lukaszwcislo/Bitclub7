@@ -29,6 +29,7 @@ body {
 .logo {
     font-size: 3.25rem;
     background-image: url(../img/logo-3.svg);
+    background-image: url(../img/logo.png);
     width: 155px;
     height: 50px;
     background-repeat: no-repeat;
@@ -39,10 +40,8 @@ nav a {
 }
 #navbarNav{
     position: relative;
-    padding-left: 31px;
 }
 .navbar-toggler {
-    margin-right: 7%;
     padding: 0;
 }
 .navbar-expand-lg .navbar-nav {
@@ -52,6 +51,7 @@ nav a {
 .nav-item {
     transition: 0.2s ease;
 }
+
 .nav-item::after {
     content: '';
     border-bottom: 2px solid #fed046;
@@ -76,11 +76,9 @@ nav a {
     background-color: #fff;
     transition: 0.4s;
     background-color: #ffffff5e;
-    height: 100px;
 }
 #nav.black {
     background: black;
-    height: 66px;
 }
 .navbar-shadow {
     box-shadow: 0px 5px 15px #888787;
@@ -106,10 +104,13 @@ h1 {
 
 #header {
     width: 100%;
-    min-height: 100vh;
+    min-height: 105vh;
     background-image: linear-gradient(to right, #00000085, #00000000), url(../img/header.jpg);
     background-image: url(../img/header.jpg);
     background-size: cover;
+    clip-path: polygon(0% 100%, 100% 95%, 100% 0%, 0% 0%);
+    -webkit-clip-path: polygon(0% 100%, 100% 97%, 100% 0%, 0% 0%);
+}
 }
 .image {
     width: 100%;
@@ -167,10 +168,22 @@ button:hover {
     color: white;
     padding: 45px;
     transition: .2s;
+    clip-path: polygon(0% 100%, 100% 95%, 100% 0%, 0% 0%);
+}
+.service__box::after {
+    content: '';
+    width: 82%;
+    height: 2px;
+    position: absolute;
+    box-shadow: 15px 18px 20px 2px black;
+    transform: rotate(-6deg);
+    bottom: 44px;
+    z-index: 100;
 }
 .service__box {
     padding: 4px;
     transition: .2s;
+    position: relative;
 }
 .service__box:hover .service__image {
     background-image: linear-gradient(#02182900, #0218298a), url(../img/box.jpg);
@@ -225,13 +238,15 @@ button:hover {
 }
 .about__desc {
     height: 400px;
-    padding: 30px 0;
 }
 .about__image {
     background-image: url(../img/bitcoin-laptop.png);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    min-height: 340px;
+    min-height: 340px;
+    margin-top: 105px;
 }
 .aboutButton {
     padding: 10px 50px;
@@ -249,7 +264,6 @@ button:hover {
     padding: 50px 0;
 }
 .pages__icon {
-    height: 300px;
     text-align: center;
     padding: 10px 46px;
     transition: .2s;
@@ -266,6 +280,7 @@ button:hover {
     background-position: center;
     background-size: 35%;
     background-repeat: no-repeat;
+        min-height: 324px;
 }
 .pages__desc {
     text-align: left;
@@ -317,19 +332,20 @@ button:hover {
     padding: 4px 0;
     width: 180px;
     border-radius: 5px;
+    position: relative;
 }
 #elements i {
     color: white;
     font-size: 37px;
     position: absolute;
-    left: 18px;
+    left: 3px;
     top: 0px;
 }
 .icon-2 {
     color: #7ac735!important;
 }
 #elements figure {
-
+    margin: auto;
 }
 #elements figure p {
     display: inline;
@@ -370,6 +386,7 @@ button:hover {
 #footer ul li:first-child {
     margin-bottom: 15px;
     color: white;
+    font-weight: bold;
 }
 #footer ul li:nth-child(4) {
     color: white;

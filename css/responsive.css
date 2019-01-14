@@ -1,0 +1,37 @@
+@media all and (max-width: 767px) {
+    
+     h1 {
+    color: white;
+    margin-top: 30vh;
+    font-size: 2rem;
+}
+    
+    #header h2 {
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+    
+}
+
+@media all and (max-width: 575px) {
+    
+#elements figure {
+    margin: 6px auto;
+}
+    .footer__logo {
+        margin: auto;
+        width: 143px;
+    }
+    .footer__icons {
+        width: 164px;
+        margin: 20px auto;
+    }
+    .footer__box {
+        text-align: center;
+    }
+    #footer ul {
+        padding: 0;
+    }
+}
+
+

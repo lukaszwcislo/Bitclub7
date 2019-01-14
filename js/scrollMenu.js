@@ -1,3 +1,4 @@
+ 
 $(window).scroll(function(){
    var top = $(window).scrollTop();
    var find_class_small = $.contains('nav', '.black');
@@ -10,3 +11,11 @@ $(window).scroll(function(){
    }
  
 });
+
+$('.nav-link').on('click',function() {
+  $('.navbar-collapse').collapse('hide');
+});
+$('.show-info-button').click(function(){
+    $('#modalGetFreeNow').modal('show');
+})
+
