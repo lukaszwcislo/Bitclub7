@@ -168,22 +168,29 @@ button:hover {
     color: white;
     padding: 45px;
     transition: .2s;
-    clip-path: polygon(0% 100%, 100% 95%, 100% 0%, 0% 0%);
+    clip-path: polygon(0% 100%, 100% 95%, 100% 2%, 0% 0%);
 }
-.service__box::after {
+
+.serviceBoxShadow {
+    padding: 4px;
+    transition: .2s;
+    position: relative;
+}
+.serviceBoxShadow::after {
     content: '';
     width: 82%;
-    height: 2px;
+    height: 31px;
     position: absolute;
-    box-shadow: 15px 18px 20px 2px black;
+    box-shadow: 15px 18px 20px 2px #424242;
     transform: rotate(-6deg);
     bottom: 44px;
-    z-index: 100;
+/*    z-index: 100;*/
 }
 .service__box {
     padding: 4px;
     transition: .2s;
     position: relative;
+    z-index: 10;
 }
 .service__box:hover .service__image {
     background-image: linear-gradient(#02182900, #0218298a), url(../img/box.jpg);
