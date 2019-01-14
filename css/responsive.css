@@ -10,6 +10,9 @@
     font-size: 1.3rem;
     margin-top: 20px;
 }
+    .logo {
+        height: 50px;
+    }
     
 }
 
@@ -17,7 +20,18 @@
     
 #elements figure {
     margin: 6px auto;
+    z-index: 20;
 }
+    #elements::after {
+        z-index: 10;
+        width: 50px;
+        height: 50px;
+        bottom: -25px;
+        left: calc(50% - 25px);
+    }
+    #footer {
+        padding-top: 35px;
+    }
     .footer__logo {
         margin: auto;
         width: 143px;
