@@ -5,7 +5,8 @@
 body {
     overflow-x: hidden;
 }
-/* --################################# NAV ######################################--*/
+/* --------------------------------- NAV ----------------------------------*/
+
 .fixed-top {
 
 }
@@ -93,7 +94,7 @@ nav a {
     color: gold;
 }
 
-/* --################################# HEADER ######################################--*/
+/* ---------------------------------- HEADER ----------------------------------*/
 h1 {
     color: white;
     margin-top: 40vh;
@@ -110,7 +111,6 @@ h1 {
     width: 100%;
     min-height: 105vh;
     background-image: linear-gradient(to right, #00000085, #00000000), url(../img/header.jpg);
-    background-image: url(../img/header.jpg);
     background-size: cover;
     clip-path: polygon(0% 97%, 100% 100%, 100% 0%, 0% 0%);
     -webkit-clip-path: polygon(0% 97%, 100% 100%, 100% 0%, 0% 0%);
@@ -159,14 +159,14 @@ button:hover {
     cursor: pointer;
 }
 
-/* --################################# SERVICE ######################################--*/
+/* ---------------------------------- SERVICE ----------------------------------*/
 
 .service__titles {
     padding: 50px 0;
     text-align: center;
 }
 .service__image {
-    background-image: linear-gradient(#021829bf, #0218298a), url(../img/box.jpg);
+    background-image: linear-gradient(#021829bf, #0218298a), url(../img/abstract.jpg);
     background-size: cover;
     min-height: 364px;
     color: white;
@@ -194,16 +194,12 @@ button:hover {
     position: relative;
     z-index: 10;
 }
-.service__box:hover .service__image {
-    background-image: linear-gradient(#02182900, #0218298a), url(../img/box.jpg);
-}
+
 .serviceImageShadow {
     height: 50%;
     left: 0;
     bottom: 0;
-    background-image: linear-gradient(rgba(2, 24, 41, 0.69), rgba(2, 24, 41, 0.79));
     padding: 10px 10px;
-    box-shadow: 0 0 9px 10px #01172ec2;
 }
 .icon {
     color: white;
@@ -236,7 +232,7 @@ button:hover {
     padding: 10px 50px;
     background-color: white;
 }
-/* --################################# ABOUT ######################################--*/
+/* ---------------------------------- ABOUT ----------------------------------*/
 
 #about {
     background-color: #f1f0f0;
@@ -264,7 +260,7 @@ button:hover {
     border-radius: 23px;
     border: 1px solid gold;
 }
-/* --################################# PAGES ######################################--*/
+/* ---------------------------------- PAGES ----------------------------------*/
 #pages {
     padding: 50px 0;
 }
@@ -276,10 +272,11 @@ button:hover {
     text-align: center;
     padding: 10px 46px;
     transition: .2s;
+    border: 1px solid transparent;
 }
 .pages__icon:hover {
-    background: black;
-    color: gold;
+    border: 1px solid black;
+    box-shadow: 3px 4px 10px #898989;
 }
 #pages i {
     font-size: 5rem;
@@ -294,7 +291,7 @@ button:hover {
 .pages__desc {
     text-align: left;
 }
-/* --################################# PORTFOLIO ######################################--*/
+/* ----------------------------------PORTFOLIO ----------------------------------*/
 #portfolio {
     background-color: #f1f0f0;
     padding: 50px 0;
@@ -328,7 +325,7 @@ button:hover {
 .item-mask:hover .portfolio__image {
     transform: scale(1.5) rotate(-5deg);
 }
-/* --################################# ELEMENTS ######################################--*/
+/* ---------------------------------- ELEMENTS ----------------------------------*/
 #elements {
     text-align: center;
     padding: 30px 0;
@@ -337,13 +334,13 @@ button:hover {
 
 #elements::after {
     content: '';
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     background: white;
     position: absolute;
-    bottom: -50px;
+    bottom: -25px;
     transform: rotate(-45deg);
-    left: calc(50% - 50px);
+    left: calc(50% - 25px);
 }
 #elements p:nth-child(3) {
     font-weight: bold;
@@ -379,7 +376,7 @@ button:hover {
     margin-left: 35px;
     line-height: 10px;
 }
-/* --################################# FOOTER ######################################--*/
+/* ---------------------------------- FOOTER ----------------------------------*/
 #footer {
     background: #181a29;
     color: #808080;
