@@ -272,10 +272,8 @@ button:hover {
     text-align: center;
     padding: 10px 46px;
     transition: .2s;
-    border: 1px solid transparent;
 }
 .pages__icon:hover {
-    border: 1px solid black;
     box-shadow: 3px 4px 10px #898989;
 }
 #pages i {
