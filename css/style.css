@@ -35,6 +35,7 @@ body {
     height: 70px;
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
     transition: .3s;
 }
 .logo.black {
