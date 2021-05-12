@@ -29,14 +29,15 @@ body {
 }
 .logo {
     font-size: 3.25rem;
-    background-image: url(../img/logo-3.svg);
-    background-image: url(../img/logo.png);
-    width: 155px;
+    background: linear-gradient(45deg, #ffd700, #ddad4f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     height: 70px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: .3s;
+    font-weight: 900;
 }
 .logo.black {
     height: 50px;
@@ -383,12 +384,16 @@ button:hover {
     padding-top: 70px;
 }
 .footer__logo {
-    background-image: url(../img/logo-3.svg);
-    background-image: url(../img/logo.png);
-    width: 206px;
-    height: 72px;
-    background-repeat: no-repeat;
-    background-size: contain;
+    font-size: 3.25rem;
+    background: linear-gradient(45deg, #ffd700, #ddad4f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: .3s;
+    font-weight: 900;
 }
 .footer__desc {
     text-align: center;
